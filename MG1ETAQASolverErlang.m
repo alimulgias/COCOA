@@ -51,7 +51,8 @@ Bn=[B0 B1];
 G = MG1_G_ETAQA(An);
 pi=MG1_pi_ETAQA(Bn,An,G,'Boundary',C0);
 
-%pi=[pi0,pi1,pi2+pi3+...]
+%pi=[pi0,pi1,pi2+pi3+...] pi0 for numberOfFirstLevelStates (101), pi1 for
+%environmental states (2), pi2+pi3+... for environmental states (2), total 105
 probability=pi(1)+pi(numberOfFirstLevelStates+1)+pi(length(pi)-1);
 
 end
